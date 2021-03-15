@@ -2,10 +2,11 @@ import React, { useEffect, useState, useRef } from "react";
 
 function App() {
   const [name, setName] = useState("");
-  const nameRef = useRef(0);
+  const nameRef = useRef(null);
 
   useEffect(() => {
     console.log(nameRef, nameRef.current.innerHTML);
+    nameRef.current.innerHTML += "XX";
   });
 
   return (
