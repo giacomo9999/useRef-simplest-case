@@ -6,6 +6,7 @@ function App() {
 
   useEffect(() => {
     console.log(nameRef, nameRef.current.innerHTML);
+    nameRef.current.innerHTML += "XX";
   });
 
   return (
