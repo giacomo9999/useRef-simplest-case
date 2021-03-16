@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 
 function App() {
   const [name, setName] = useState("");
-  const nameRef = useRef(0);
+  const nameRef = useRef();
 
   useEffect(() => {
     console.log(nameRef, nameRef.current.innerHTML);
